@@ -1,19 +1,18 @@
 cask "pranata" do
-  version "0.1.0"
-  sha256 "791ac5cf9557ea83b45df9518824e3811461bc40212d899ab35074eb0d252ed1"
+  arch arm: "aarch64", intel: "x64"
 
-  url "https://is3.cloudhost.id/pranata/Pranata_#{version}_aarch64.dmg"
+  version "2.0.0"
+  sha256 arm:   "42fb6026b45f2db9cc2ad2558998dbdc0dfd2264b3672a9da0ef3afa0f2d889a",
+         intel: "34785ae73f81dd8bc60ecce09a279efc8910a538d9016e5b32437d5110fa8264"
+
+  url "https://github.com/agungtp22/pranata/releases/download/v#{version}/Pranata_#{version}_#{arch}.dmg"
   name "Pranata"
-  desc "API Client & Collaboration Platform"
-  homepage "https://pranata.dev"
+  desc "Modern, lightweight, offline-first API client with Postman parity"
+  homepage "https://github.com/agungtp22/pranata"
+
+  auto_updates true
 
   app "Pranata.app"
-
-  postflight do
-    system_command "xattr",
-                   args: ["-rd", "com.apple.quarantine", "#{appdir}/Pranata.app"],
-                   sudo: false
-  end
 
   zap trash: [
     "~/Library/Application Support/com.pranata.desktop",
