@@ -2,10 +2,10 @@ cask "pranata" do
   arch arm: "aarch64", intel: "x64"
 
   version "2.0.0"
-  sha256 arm:   "42fb6026b45f2db9cc2ad2558998dbdc0dfd2264b3672a9da0ef3afa0f2d889a",
-         intel: "34785ae73f81dd8bc60ecce09a279efc8910a538d9016e5b32437d5110fa8264"
+  sha256 arm:   "fc35e2bbe99a12528bad4232a5431add91cf44a7f5ec3dfd27dc6a71d4b11afc",
+         intel: "ca23d970936964c0f3ee3a32dfaf2cbc8cb16dbf1a205ff069413438d491485f"
 
-  url "https://github.com/agungtp22/pranata/releases/download/v#{version}/Pranata_#{version}_#{arch}.dmg"
+  url "is3.cloudhost.id/Pranata_#{version}_#{arch}.dmg"
   name "Pranata"
   desc "Modern, lightweight, offline-first API client with Postman parity"
   homepage "https://github.com/agungtp22/pranata"
