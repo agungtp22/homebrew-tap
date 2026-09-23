@@ -10,6 +10,8 @@ cask "pranata" do
   desc "Modern, lightweight, offline-first API client with Postman parity"
   homepage "https://github.com/agungtp22/pranata"
 
+  depends_on :macos
+
   auto_updates true
 
   app "Pranata.app"
