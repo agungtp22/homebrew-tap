@@ -14,6 +14,12 @@ cask "pranata" do
 
   app "Pranata.app"
 
+  postflight do
+    system_command "xattr",
+                   args: ["-rd", "com.apple.quarantine", "#{appdir}/Pranata.app"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Application Support/com.pranata.desktop",
     "~/Library/Preferences/com.pranata.desktop.plist",
