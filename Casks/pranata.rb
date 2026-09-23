@@ -3,12 +3,14 @@ cask "pranata" do
 
   version "2.0.0"
   sha256 arm:   "fa013e2c8ccaa015e2eadf31ddc70d2902ce374bbce6c41c7c9e428c26d4027f",
-         intel: "0318c6c0418aa31e3cf08ee2d5484f70aac4eccfd09a4c637f9eeb11048f3569"
+         intel: "ca23d970936964c0f3ee3a32dfaf2cbc8cb16dbf1a205ff069413438d491485f"
 
-  url "is3.cloudhost.id/Pranata_#{version}_#{arch}.dmg"
+  url "https://is3.cloudhost.id/pranata/Pranata_#{version}_#{arch}.dmg"
   name "Pranata"
   desc "Modern, lightweight, offline-first API client with Postman parity"
   homepage "https://github.com/agungtp22/pranata"
+
+  depends_on :macos
 
   auto_updates true
 
