@@ -2,7 +2,7 @@ cask "pranata" do
   arch arm: "aarch64", intel: "x64"
 
   version "2.0.0"
-  sha256 arm:   "2eec55b7068f8357387049b3c1be450317014eba46d3f8cd0c50fb667e906168",
+  sha256 arm:   "fa013e2c8ccaa015e2eadf31ddc70d2902ce374bbce6c41c7c9e428c26d4027f",
          intel: "ca23d970936964c0f3ee3a32dfaf2cbc8cb16dbf1a205ff069413438d491485f"
 
   url "https://is3.cloudhost.id/pranata/Pranata_#{version}_#{arch}.dmg"
