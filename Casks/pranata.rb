@@ -1,9 +1,9 @@
 cask "pranata" do
   arch arm: "aarch64", intel: "x64"
 
-  version "2.0.0"
-  sha256 arm:   "fa013e2c8ccaa015e2eadf31ddc70d2902ce374bbce6c41c7c9e428c26d4027f",
-         intel: "ca23d970936964c0f3ee3a32dfaf2cbc8cb16dbf1a205ff069413438d491485f"
+  version "2.1.0"
+  sha256 arm:   "f0537c8b6b65f08da8c5cf12e36948336bb7918673751799b6c1ddbf4a46c0f3",
+         intel: "5dccc0d0fa3a85658008904be941cfceb2368b233b309e2d63bc8bc27e96012e"
 
   url "https://is3.cloudhost.id/pranata/Pranata_#{version}_#{arch}.dmg"
   name "Pranata"
